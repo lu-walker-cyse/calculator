@@ -9,3 +9,24 @@ def multiply(a, b):
 
 def divide(a, b):
 	return a / b
+
+def main():
+	while True:
+		a = float(input("First number: "))
+		op = input("Operator (+ - * /): ")
+		b = float(input("Second number: "))
+		match op:
+			case "+":
+				print("Result: ", add(a, b))
+			case "-":
+				print("Result: ", subtract(a, b))
+			case "*":
+				print("Result: ", multiply(a, b))
+			case "/":
+				print("Result: ", divide(a, b))
+			case _:
+				print("Operator not recognised: ", op)
+
+if __name__ == "__main__":
+	main()
+
