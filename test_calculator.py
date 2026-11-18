@@ -1,4 +1,4 @@
-from calculator import add, subtract, multiply, divide
+from calculator import add, subtract, multiply, divide, circle_area
 
 def test_add():
 	assert add(2,3) == 5
@@ -19,3 +19,11 @@ def test_division_decimal():
 	result = divide(a, b)
 	#Assert
 	assert result == 2.5
+
+def test_circle_area():
+	#Arrange
+	a = -4
+	#Act
+	result = circle_area(a)
+	#Assert
+	assert result == "Error"

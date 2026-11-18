@@ -12,6 +12,12 @@ def multiply(a, b):
 def divide(a, b):
 	return a / b
 
+def circle_area(r):
+	if r >= 0:
+		return 3.14 * (r ** 2)
+	else:
+		return "NaN"
+
 def main():
 	while True:
 		a = float(input("First number: "))
